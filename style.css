@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Microsoft+YaHei:wght@700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('assets/backgroud.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Ensures the background stays fixed during scrolling */
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* Aligns items to the top */
+    background-color: #f0f0f0;
+}
+
+.page-title {
+    font-size: 100px;
+    font-family: 'Microsoft YaHei', sans-serif;
+    font-weight: bold;
+    color: white;
+    text-shadow: 5px 5px 0 #000, -1px 1px 0 #000, 1px -1px 0 #000, -1px -1px 0 #000;
+    text-align: center;
+    margin-bottom: 10px; /* Adjusted margin to fit subtitle */
+    margin-top: 20px; /* Adds space at the top */
+}
+
+.page-subtitle {
+    font-size: 24px;
+    font-family: 'Microsoft YaHei', sans-serif;
+    font-weight: bold;
+    color: white;
+    text-shadow: 1px 1px 0 #000, -1px 1px 0 #000, 1px -1px 0 #000, -1px -1px 0 #000;
+    text-align: center;
+    margin-bottom: 20px; /* Space below subtitle */
+}
+
+.large-click-counter {
+    font-size: 80px;
+    font-family: 'Microsoft YaHei', sans-serif;
+    font-weight: bold;
+    color: white;
+    text-shadow: 1px 1px 0 #000, -1px 1px 0 #000, 1px -1px 0 #000, -1px -1px 0 #000;
+    transition: transform 0.2s ease;
+    margin-bottom: 90px;
+}
+
+.image-container {
+    position: relative;
+    width: 500px; /* Increased width */
+    height: 500px; /* Increased height */
+    overflow: hidden;
+    margin-top: -100px; /* Moves the container up */
+    scale: 120%;
+}
+
+.image-container img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: auto;
+    height: 110%; /* Increased height */
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
+
+.click-counter-wrapper {
+    display: flex;
+    align-items: center;
+    margin-top: 80px; /* Reduced space above the counter */
+    padding: 10px;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.2);
+    margin-bottom: 150px;
+}
+
+.click-counter {
+    font-size: 24px;
+    font-family: 'Microsoft YaHei', sans-serif;
+    font-weight: bold;
+    color: white;
+    text-shadow: 1px 1px 0 #000, -1px 1px 0 #000, 1px -1px 0 #000, -1px -1px 0 #000;
+    transition: transform 0.2s ease;
+    margin-left: 20px;
+}
+
+.counter-text {
+    font-size: 24px;
+    font-family: 'Microsoft YaHei', sans-serif;
+    font-weight: bold;
+    color: white;
+    text-shadow: 1px 1px 0 #000, -1px 1px 0 #000, 1px -1px 0 #000, -1px -1px 0 #000;
+}
+
+.bottom-nav {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 10px 0;
+}
+
+.bottom-nav a {
+    font-family: 'Microsoft YaHei', sans-serif;
+    font-weight: bold;
+    color: white;
+    margin: 0 20px;
+    font-size: 20px;
+    text-decoration: none;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.bottom-nav a:hover {
+    transform: scale(1.2);
+    color: rgb(165, 165, 165);
+}
